@@ -1,0 +1,43 @@
+doctype html
+html
+head
+  title
+    pace_calculator
+  script src="http://www.parsecdn.com/js/parse-1.2.7.min.js"
+  = stylesheet_link_tag    "application", :media => "all"
+  = javascript_include_tag "application"
+  = csrf_meta_tags
+head
+body
+
+  div.global-header
+    h2 The Kitchen Is Yours, Chef!
+    h1
+      a.logo.seo
+        | pace_calculator
+        img src="http://placehold.it/165x34"
+
+    ul.nav-user
+      li
+        a.add.ss-plus href="#" Add
+      li
+        a.settings.ss-settings href="#" Settings
+      li
+        a.user.ss-user href="#" User
+
+  div.global-sidebar
+    ul.nav-app
+      li
+        a href="#" My Recipes
+      li
+        a href="#" Public Recipes
+      li
+        a href="#" Popular Recipes
+      li
+        a href="#" My Favorite Recipes
+      li
+        a href="#" My Pantry
+
+  div.global-container
+    = yield
+

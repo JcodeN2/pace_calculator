@@ -1,0 +1,6 @@
+
+.name  = @idnum
+.fivek = @fivek
+.tenk = @tenk
+.halfmar = @hamaranth
+.marathon = @marathon
